@@ -1,4 +1,6 @@
-def recall_list(name: str):
+from typing import Any
+
+def recall_list(name: str) -> Any:
     """Return the list stored under the given name."""
     ...
 
@@ -6,7 +8,7 @@ def store_list(name: str, var):
     """Store a list under the given name."""
     ...
 
-def recall_RegEQ():
+def recall_RegEQ() -> Any:
     """Return the stored regression equation."""
     ...
 
