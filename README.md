@@ -1,71 +1,76 @@
-# vscode-micropython-intellisense README
+# 🐍 MicroPython IntelliSense Stubs for TI‑84 Plus CE Python Edition
 
-This is the README for your extension "vscode-micropython-intellisense". After writing up a brief description, we recommend including the following sections.
+## 📖 Overview
+This project provides a **complete set of MicroPython `.py` stub files** for use in editors like **VS Code** to enable:
+- **Full IntelliSense** (autocompletion, hover docs, signature help)
+- **Accurate linting** for TI‑84 Plus CE Python Edition’s built‑in modules
+- **General MicroPython API coverage** for portable code
+- **Optional safe emulation** of core functions so code can run on PC without hardware
 
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+It combines:
+- **TI‑84‑specific modules** (`ti_system`, `ti_hub`, `ti_draw`, etc.)
+- **General MicroPython modules** (`machine`, `utime`, `uos`, `network`, etc.)
+- **Underused/advanced modules** (`ure`, `ujson`, `uasyncio`, `uzlib`, etc.)
+- **Pyboard/STM32 modules** (`pyb`, `stm`) for cross‑port compatibility
 
 ---
 
-## Following extension guidelines
+## ✨ Features
+- 📦 **Stubbed APIs** for *most* MicroPython modules
+- 🖥 **PC‑safe emulation** for common functions (e.g., `utime.sleep`, `uos.listdir`)
+- 🛠 **Accurate signatures** matching MicroPython docs
+- 📚 **Docstrings** with TI‑84 quirks and notes
+- 🔍 **Import‑aware linting** when paired with VS Code + Pylance
+- 🔄 **Cross‑port development** — write once, run on TI‑84 or other MicroPython boards
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+---
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+## 📂 Included Modules
 
-## Working with Markdown
+### TI‑84 Plus CE Python Edition
+- `ti_system`
+- `ti_hub`
+- `ti_draw`
+- `ti_plotlib`
+- `ti_rover`
+- `ti_sensor`
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+### General MicroPython Core
+- `machine`
+- `utime` / `time`
+- `uos`
+- `network`
+- `random`
+- `micropython`
+- `gc`
+- `sys`
+- `errno`
+- `select`
+- `struct` / `ustruct`
+- `binascii`
+- `hashlib`
+- `io` / `uio`
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+### Underused / Advanced
+- `ure`
+- `ujson`
+- `uasyncio`
+- `uzlib`
+- `uheapq`
+- `utimeq`
+- `ubluetooth`
+- `framebuf`
+- `onewire`
+- `ds18x20`
 
-## For more information
+### Pyboard / STM32 Specific
+- `pyb`
+- `stm` (pre‑populated with STM32F405 register constants)
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+---
 
-**Enjoy!**
+## 🚀 Getting Started
+
+### 1. Clone or Download
+```bash
+git clone https://github.com/killercraft-thecoder/vscode-micropython-intellisense/
