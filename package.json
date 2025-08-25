@@ -13,13 +13,32 @@
   "main": "./dist/extension.js",
   "contributes": {
     "languages": [
-    {
-      "id": "python",
-      "aliases": ["MicroPython", "mpy"],
-      "extensions": [".mpy"],
-      "configuration": "./language-configuration.json"
+      {
+        "id": "micropython",
+        "aliases": [
+          "MicroPython"
+        ],
+        "extensions": [
+          ".mpy"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "micropython",
+        "scopeName": "source.python",
+        "path": "./syntaxes/python.tmLanguage.json"
+      }
+    ],
+    "configurationDefaults": {
+      "[micropython]": {
+        "python.analysis.extraPaths": [
+          "${extensionPath}/micropython_lib"
+        ],
+        "python.analysis.useLibraryCodeForTypes": false
+      }
     }
-  ]
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
