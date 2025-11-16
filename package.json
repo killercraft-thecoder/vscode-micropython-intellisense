@@ -4,6 +4,7 @@
   "description": "A Extension to Provide intellisense to micropython_lib",
   "version": "0.0.1",
   "publisher":"killercraft-the-coder",
+  "repository": {"url":"https://github.com/killercraft-thecoder/vscode-micropython-intellisense"},
   "engines": {
     "vscode": "^1.103.0"
   },
