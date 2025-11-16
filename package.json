@@ -1,8 +1,9 @@
 {
   "name": "vscode-micropython-intellisense",
   "displayName": "vscode-micropython-intellisense",
-  "description": "",
+  "description": "A Extension to Provide intellisense to micropython_lib",
   "version": "0.0.1",
+  "publisher":"killercraft-the-coder",
   "engines": {
     "vscode": "^1.103.0"
   },

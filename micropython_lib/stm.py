@@ -103,6 +103,6 @@ class mem8(dict):
         _mem8[addr] = value & 0xFF
 
 # Instantiate the memory access objects
-mem32 = mem32()
-mem16 = mem16()
-mem8  = mem8()
+mem32 = mem32() # type:ignore
+mem16 = mem16() # type:ignore
+mem8  = mem8() # type:ignore

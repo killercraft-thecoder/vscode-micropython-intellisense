@@ -5,7 +5,7 @@ On TI‑84: not available — this is for IntelliSense and optional emulation.
 """
 
 # Constants
-USB_VCP = 0
+USB_VCP = 0 # type:ignore
 USB_HID = 1
 
 # Classes
